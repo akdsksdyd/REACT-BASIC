@@ -37,7 +37,7 @@ const MyComponent = (/*props*/ {name, age, email, addr}) => {
             <div>나의 첫번째 컴포넌트 1</div>
             <div>props값: {name}</div>
             <div>props값: {age}</div>
-            {/* <div>props값: {email}</div> */}
+            <div>props값: {email}</div>
             <div>props값: {addr}</div>
 
         </Fragment>
@@ -48,7 +48,7 @@ const MyComponent = (/*props*/ {name, age, email, addr}) => {
 MyComponent.defaultProps = {
     name : '이름없음',
     age : 0,
-    /* email : '지정안됨', */
+    email : '지정안됨',
     addr : '서울시' //addr은 전달되지 않지만 기본값
 }
 
