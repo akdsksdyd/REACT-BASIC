@@ -1,6 +1,6 @@
 import { Fragment } from "react"
 
-const MyComponent2 = () => {
+const MyComponent2 = ( name ) => {
 
     return (
 
