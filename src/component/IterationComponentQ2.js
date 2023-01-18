@@ -29,6 +29,10 @@ const IterationComponentQ2 = () => {
         setList(newList);
     }
 
+    const handleKey = (e) => {
+        if(e.keyCode === 13)handleClick();
+    }
+
     const [search, setSearch] = useState('');
     const searchInfo = (e) => {
         setSearch(e.target.value);
@@ -46,7 +50,7 @@ const IterationComponentQ2 = () => {
                 포함된 데이터만 필터링
             </h3>
 
-            Search<input type="text" onChange={searchInfo} value={search}/>
+            Search<input type="text" onChange={searchInfo} onKeyUp={handleKey} value={search}/>
             <button type="button" onClick={handleClick}>검색</button>
             <br/>
             과목찾기<select onChange={handleChange}>
